@@ -1,0 +1,185 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/solids/protos/SolidBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.30295656717194674 0.15432298786824156 -0.9404263574692111 2.248098561953173
+  position -0.20194462495200927 0.7764322230737901 0.4572032330623319
+  follow "e-puck"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 0 1 0 0
+  floorSize 1.5 1.5
+  floorTileSize 1 1
+}
+SolidBox {
+  translation 0.15 0.55 0.06
+  name "box(3)"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 0 1 0
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/default/worlds/textures/tagged_wall.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+    emissiveColor 0 1 0
+  }
+}
+SolidBox {
+  translation 0.51 -0.24 0.06
+  name "box(2)"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 1
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/default/worlds/textures/tagged_wall.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+    emissiveColor 0 0 1
+  }
+}
+SolidBox {
+  translation -0.53 -0.56 0.06
+  name "box(1)"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/default/worlds/textures/tagged_wall.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+    emissiveColor 1 0 0
+  }
+}
+E-puck {
+  hidden position_0_0 1527.73932752773
+  hidden linearVelocity_0 -4.899630585079157e-10 5.1817926187218945e-09 -1.3263464400855204e-15
+  hidden angularVelocity_0 -1.3955464238005318e-07 -1.3195396879917546e-08 1.1586383710799128e-07
+  hidden translation_1 0 0.025999999999999895 0.02
+  hidden rotation_1 0 -0.9999999999999999 0 5.357887424089117
+  hidden linearVelocity_1 -8.452133622020446e-10 8.940368784600277e-09 1.465492799374472e-15
+  hidden angularVelocity_1 -4.484091058668336e-07 -4.2399075076825176e-08 1.1586383009301433e-07
+  hidden translation_2 0 -0.02599999999999981 0.02
+  hidden rotation_2 0 1 0 5.204769179449378
+  hidden linearVelocity_2 -2.6667152242621154e-10 2.818803322494714e-09 -1.3766772092644768e-15
+  hidden angularVelocity_2 -1.3955576929609992e-07 -1.3195320249175942e-08 1.1586384930880633e-07
+  translation -0.5958240589711753 0.19141165097251922 -6.396199578797765e-05
+  rotation 5.10958142323782e-08 5.470629516121161e-08 -0.9999999999999972 1.4765220032234827
+  controller "project_part2"
+  camera_height 42
+  groundSensorsSlot [
+    DistanceSensor {
+      rotation 0 1 0 1.56
+      name "ir0"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0 -0.01 0
+      rotation 0 1 0 1.56
+      name "ir1"
+      type "infra-red"
+    }
+  ]
+}
+Solid {
+  translation -0.58 0 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../../../Downloads/cat6.jpeg"
+          ]
+        }
+        roughness 0.5
+        metalness 0
+      }
+      geometry IndexedFaceSet {
+        coord Coordinate {
+          point [
+            -0.05 0.05 0.05
+            0.05 0.05 0.05
+            0.05 0.05 -0.05
+            -0.05 0.05 -0.05
+            -0.05 -0.05 -0.05
+            0.05 -0.05 -0.05
+            0.05 -0.05 0.05
+            -0.05 -0.05 0.05
+            -0.05 -0.05 0.05
+            0.05 -0.05 0.05
+            0.05 0.05 0.05
+            -0.05 0.05 0.05
+            0.05 -0.05 -0.05
+            -0.05 -0.05 -0.05
+            -0.05 0.05 -0.05
+            0.05 0.05 -0.05
+            -0.05 -0.05 -0.05
+            -0.05 -0.05 0.05
+            -0.05 0.05 0.05
+            -0.05 0.05 -0.05
+            0.05 -0.05 0.05
+            0.05 -0.05 -0.05
+            0.05 0.05 -0.05
+            0.05 0.05 0.05
+          ]
+        }
+        texCoord TextureCoordinate {
+          point [
+            1 1
+            0 1
+            0 0
+            1 0
+            0 0
+            1 0
+            1 1
+            0 1
+            0 1
+            0 0
+            1 0
+            1 1
+            0 1
+            0 0
+            1 0
+            1 1
+            1 0
+            1 1
+            0 1
+            0 0
+            0 1
+            0 0
+            1 0
+            1 1
+          ]
+        }
+        coordIndex [
+          0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+        ]
+        creaseAngle 1.5
+      }
+    }
+  ]
+  name "box"
+  model "box"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
