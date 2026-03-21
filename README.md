@@ -3,8 +3,11 @@ Applied Robotics and AI Project
 This repo contains the notebook for the CNN model as well as all relevant documentation for Part II of the ARAIP coursework.
 
 Folders (Branches):
+
 CNN - Contains CNN model notebook, to be run using Google Colab
+
 Webots - Contains the Webots project world, controller and assets
+
 Images - Contains the images used in testing the CNN model
 
 How to run the CNN model?
